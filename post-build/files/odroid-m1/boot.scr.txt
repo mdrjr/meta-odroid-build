@@ -1,0 +1,21 @@
+
+setenv bootargs " ${bootargs} root=/dev/mmcblk0p2 rootwait rw"
+setenv bootlabel "Yocto"
+# Default TTY console
+setenv bootargs "${bootargs} console=tty1 console=ttyS2,1500000"
+# MISC
+setenv bootargs "${bootargs} pci=nomsi"
+setenv bootargs "${bootargs} fsck.mode=force fsck.repair=yes"
+setenv bootargs "${bootargs} net.ifnames=0"
+
+setenv fdtfile "rk3568-odroid-m1.dtb"
+
+setenv partition 1
+
+# Load DTB
+load ${devtype} ${devnum}:${partition} ${fdt_addr_r} rk3568-odroid-m1.dtb
+fdt addr ${fdt_addr_r}
+
+# Load Kernel
+load ${devtype} ${devnum}:${partition} ${kernel_addr_r} Image
+booti ${kernel_addr_r} - ${fdt_addr_r}

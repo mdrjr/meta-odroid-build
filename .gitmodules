@@ -1,0 +1,21 @@
+[submodule "meta-browser"]
+	path = meta-browser
+	url = ./meta-browser
+[submodule "meta-clang"]
+	path = meta-clang
+	url = ./meta-clang
+[submodule "meta-openembedded"]
+	path = meta-openembedded
+	url = ./meta-openembedded
+[submodule "meta-rockchip"]
+	path = meta-rockchip
+	url = ./meta-rockchip/
+[submodule "openembedded-core"]
+	path = openembedded-core
+	url = ./openembedded-core/
+[submodule "poky"]
+	path = poky
+	url = ./poky/
+[submodule "meta-odroid-rk"]
+	path = meta-odroid-rk
+	url = ./meta-odroid-rk
