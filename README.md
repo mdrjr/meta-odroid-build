@@ -6,5 +6,4 @@ Instructions:
 follow instructions.
 
 TODO:
- - Properly implement boot.scr
  - Don't Hack weston-init to start chromium
