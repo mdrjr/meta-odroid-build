@@ -9,7 +9,7 @@
 	url = git://git.openembedded.org/meta-openembedded.git
 [submodule "meta-rockchip"]
 	path = meta-rockchip
-	url = https://github.com/JeffyCN/meta-rockchip.git
+	url = https://github.com/mdrjr/meta-rockchip.git
 [submodule "openembedded-core"]
 	path = openembedded-core
 	url = https://git.openembedded.org/openembedded-core
