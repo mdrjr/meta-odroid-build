@@ -2,18 +2,8 @@
 
 # Get Machine
 bitbake -e | grep MACHINE= | head -n1 > /tmp/a.sh
-source /tmp/a.sh
-rm -rf /tmp/mnt
-mkdir /tmp/mnt
 
-# mount image first partition 
-sudo mount -o loop,offset=$[2048*512] build/tmp/deploy/images/$MACHINE/odroid-image-$MACHINE.rootfs.wic /tmp/mnt
-sudo cp post-build/files/$MACHINE/boot.scr /tmp/mnt
-sudo cp post-build/files/autostart.cfg /tmp/mnt
-sudo umount /tmp/mnt
-sudo rm -rf /tmp/mnt
-
-ln -s build/tmp/deploy/images/$MACHINE/odroid-image-$MACHINE.rootfs.wic ./odroid.img
-
+ln -s build/tmp/deploy/images/$MACHINE/odroid-image-$MACHINE.rootfs.wic "./$MACHINE.img"
+ln -s build/tmp/deploy/images/$MACHINE/odroid-image-$MACHINE.rootfs.wic.xz "./$MACHINE.img.xz"
 
 
