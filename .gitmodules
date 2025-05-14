@@ -19,3 +19,6 @@
 [submodule "meta-odroid-rk"]
 	path = meta-odroid-rk
 	url = https://github.com/mdrjr/meta-odroid-rk.git
+[submodule "meta-odroid-aml"]
+        path = meta-odroid-aml
+        url = https://github.com/mdrjr/meta-odroid-aml.git
