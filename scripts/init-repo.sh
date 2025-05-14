@@ -8,14 +8,21 @@ echo "Select board to build:"
 echo "1 - ODROID-M1"
 echo "2 - ODROID-M1S"
 echo "3 - ODROID-M2"
+echo "4 - ODROID-C5"
 echo -n ": "
 read brd
 if [ "$brd" -eq "1" ]; then
     sed -i "s/@BOARD@/odroid-m1/g" build/conf/local.conf
+    cp build/conf/bblayers.conf.rk build/conf/bblayers.conf
 elif [ "$brd" -eq "2" ]; then
     sed -i "s/@BOARD@/odroid-m1s/g" build/conf/local.conf
+    cp build/conf/bblayers.conf.rk build/conf/bblayers.conf
 elif [ "$brd" -eq "3" ]; then
     sed -i "s/@BOARD@/odroid-m2/g" build/conf/local.conf
+    cp build/conf/bblayers.conf.rk build/conf/bblayers.conf
+elif [ "$brd" -eq "4" ]; then
+    sed -i "s/@BOARD@/odroid-c5/g" build/conf/local.conf
+    cp build/conf/bblayers.conf.aml build/conf/bblayers.conf
 else
     echo "ERROR: Invalid board, try again"
     exit 0
