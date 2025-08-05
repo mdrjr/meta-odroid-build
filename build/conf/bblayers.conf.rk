@@ -14,6 +14,7 @@ BBLAYERS ?= " \
   ${TOPDIR}/../poky/meta-yocto-bsp \
   ${TOPDIR}/../meta-openembedded/meta-oe \
   ${TOPDIR}/../meta-clang \
+  ${TOPDIR}/../meta-lts-mixins \
   ${TOPDIR}/../meta-browser/meta-chromium \
   ${TOPDIR}/../meta-odroid-rk \
   "
