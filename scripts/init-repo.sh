@@ -29,7 +29,7 @@ else
 fi
 
 echo "Now you can run: "
-echo "source poky/oe-init-build-env"
+echo "source openembedded-core/oe-init-build-env"
 echo
 echo "To build a image run:"
 echo "bitbake odroid-image"

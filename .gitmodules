@@ -13,12 +13,15 @@
 [submodule "openembedded-core"]
 	path = openembedded-core
 	url = https://git.openembedded.org/openembedded-core
-[submodule "poky"]
-	path = poky
-	url = git://git.yoctoproject.org/poky
 [submodule "meta-odroid-rk"]
 	path = meta-odroid-rk
 	url = https://github.com/mdrjr/meta-odroid-rk.git
 [submodule "meta-odroid-aml"]
         path = meta-odroid-aml
         url = https://github.com/mdrjr/meta-odroid-aml.git
+[submodule "meta-yocto"]
+	path = meta-yocto
+	url = https://git.yoctoproject.org/meta-yocto
+[submodule "bitbake"]
+	path = bitbake
+	url = https://git.openembedded.org/bitbake
